@@ -18,3 +18,14 @@ Complete Basic Back-End Comprehensive + Practical
 
 1 ====> nodemon
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Section-3
+
+# Types of Modules
+
+1. Core Modules
+   => Built-in modules provided by Node.js, such as fs, http, path, etc.
+2. Local Modules
+   => Custom modules created by developers and located within the project.
+3. Third Party Modules
+   => Modules installed via npm(Node Package Manager).
