@@ -1,5 +1,6 @@
 let express = require("express");
 let app = express();
+app.use(express.json())
 app.get("/", (req, res) => {
   res.send({
     status: 1,
@@ -14,6 +15,12 @@ app.get("/news", (req, res) => {
   });
 });
 
+
+app.get("/news/:id",(req, res) => {
+  let currentId = req.params.id
+  res.send(`News Details API: ${currentId}`)
+})
+
 app.get("/products", (req, res) => {
   res.send({
     status: 3,
@@ -21,15 +28,34 @@ app.get("/products", (req, res) => {
   });
 });
 
+
+
+
 app.post("/login", (req, res) => {
-  res.send({
+  console.log(req);
+  console.log(req.body);
+  //First method of response beginner method
+  // res.send({
+  //   status: 4,
+  //   msg: "Login Page API",
+  //   Bodydata:req.body,
+  //   queryData:req.query
+  // });
+
+  //Second method response 
+  res.status(200).json({
     status: 4,
-    msg: "Login Page API",
-  });
+     msg: "Login Page API",
+     Bodydata:req.body,
+     queryData:req.query
+  })
+  // console.log(req.query)
 });
 
 app.listen(8000, () => {
   console.log("Server is running at http://localhost:8000");
+  console.log(`Hold ctrl and tap on link    ☝️    to open`);
+  
 });
 
-//1:25:00 ended here. safe to start from 1:00:00
+
