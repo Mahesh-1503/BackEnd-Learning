@@ -44,4 +44,10 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Section-6
 
-1==> Middleware in Express.jsf
+1==> Middleware in Express.js
+
+# Section-7
+1==> Route-level Middleware in Express.js (Notes can be found in section-6 combined)
+
+# Section-8
+1==> Condition based  Route-level Middleware in Express.js(EASY)
