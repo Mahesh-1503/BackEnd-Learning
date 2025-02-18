@@ -1,4 +1,4 @@
-Got it! Here’s a **beginner-friendly, condition-based route-level middleware** example in Express.js.
+A **beginner-friendly, condition-based route-level middleware** example in Express.js.
 
 ---
 
