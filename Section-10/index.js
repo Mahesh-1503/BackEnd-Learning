@@ -15,6 +15,10 @@ MongoClient.connect(process.env.MONGO_URI)
 })
 // console.log(process.env) //global object
 
+app.get('/', (req,res) => {
+    res.send(`You are at <h1 style="color: red;">HOME PAGE</h1>`)
+})
+
 app.listen(PORT, () => {
     console.log(`server started and running at http://localhost:${PORT}`)
 })
