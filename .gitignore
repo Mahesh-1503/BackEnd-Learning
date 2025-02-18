@@ -1,8 +1,12 @@
 # Ignore node_modules inside Section-5
 Section-5/node_modules/
+Section-5/package-lock.json
 Section-6/node_modules/
+Section-6/package-lock.json
 Section-7/node_modules/
+Section-7/package-lock.json
 Section-8/node_modules/
+Section-8/package-lock.json
 
 
 # General Ignore Rules
