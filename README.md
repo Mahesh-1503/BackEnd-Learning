@@ -41,3 +41,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Section-5.1
 
 1.1 ===> Routing & Route Params (Request & Response)
+
+# Section-6
+
+1==> Middleware in Express.jsf
