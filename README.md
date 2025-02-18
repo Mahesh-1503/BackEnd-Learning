@@ -51,3 +51,12 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # Section-8
 1==> Condition based  Route-level Middleware in Express.js(EASY)
+
+
+# Section-9
+1.===> Setting up .env in Node.js and its(.env) importance
+
+
+# Section-10
+1.===> MongoDB Introduction
+2.===> Connecting MongoDB with Node.js (Insert & View APIs)
