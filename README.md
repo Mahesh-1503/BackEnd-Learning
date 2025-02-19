@@ -2,7 +2,7 @@
 
 Complete Basic Back-End Comprehensive + Practical
 . 
-Learning Through ChatGPT 
+# Learning Through ChatGPT 
 NOTE: Notes also from ChatGPT 
 
 # Section 0
