@@ -60,3 +60,11 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Section-10
 1.===> MongoDB Introduction
 2.===> Connecting MongoDB with Node.js (Insert & View APIs)
+
+# Section-11
+1.==> What are APIs
+  ==> What are REST APIs
+  ==> What are Methods
+  ==> Routes
+  ==> MVC (Model View Controller)
+  ==> CRUD (Create Read Update Delete)

@@ -4,8 +4,9 @@ Section-6/node_modules/
 Section-7/node_modules/
 Section-8/node_modules/
 Section-9/node_modules/
-
-
+Section-10/node_modules/
+Section-11/node_modules/
+node_modules
 # General Ignore Rules
 node_modules/
 .env
