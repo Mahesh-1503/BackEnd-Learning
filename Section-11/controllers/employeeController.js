@@ -1,7 +1,7 @@
 const Employee = require('../models/Employee')
 
 
-//POST Method Code
+//POST Method Code (CREATE)
 const createEmployee = async(req,res) => {
     try{
         const {name, email, phone, city} = req.body
@@ -20,7 +20,7 @@ const createEmployee = async(req,res) => {
     }
 }
 
-//GET Method Code
+//GET Method Code (READ)
 const getEmployees = async(req,res) => {
     try{
         const employees = await Employee.find()
@@ -31,7 +31,7 @@ const getEmployees = async(req,res) => {
     }
 }
 
-//GET Method To GET Single Employee Data With ID
+//GET Method To GET Single Employee Data With ID (READ)
 const singleEmployee = async(req,res) => {
     try{
         const employee = await Employee.findById(req.params.id)
@@ -47,4 +47,42 @@ const singleEmployee = async(req,res) => {
     }
 }
 
-module.exports = {createEmployee, getEmployees, singleEmployee}
+//PUT METHOD  (UPDATE)
+const updateEmployee = async(req,res) => {
+    try{
+
+        const {name, email, phone, city} = req.body
+
+        const myEmployee = await Employee.findByIdAndUpdate(
+            req.params.id,
+            {name, email, phone, city},
+            // { new: true, runValidators: true } // ✅ Returns updated doc & validates
+
+        ) 
+        if(!myEmployee){
+            return res.status(404).json({message:'EMPLOYEE NOT FOUND'})
+        }
+        res.status(200).json(myEmployee)
+
+    }catch(error){
+        console.error(`There is an error:`, error)
+        res.status(500).json({message:'SERVER ERROR'})
+    }
+}
+
+//DELETE METHOD (DELETE)
+
+const deleteEmployee = async(req, res) => {
+    try{
+
+        const deleteEmployee = await Employee.findByIdAndDelete(req.params.id)
+        res.status(204).send()
+
+    }catch(error){
+        console.error(`There is an error:`, error)
+        res.status(500).json({message:'SERVER ERROR'})
+    }
+}
+
+
+module.exports = {createEmployee, getEmployees, singleEmployee, updateEmployee, deleteEmployee}
