@@ -83,3 +83,21 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 📝 **CRUD Operations (Create, Read, Update, Delete)**  
 
 ---
+
+### 📌 **Section 12: Practice - Book-Store API**  
+📚 **Build a Complete Book-Store API using Node.js, Express, and MongoDB!**  
+
+✔️ **Features to Implement:**  
+🔹 **Add a New Book** 📖 (POST)  
+🔹 **Get All Books** 📚 (GET)  
+🔹 **Get a Specific Book by ID** 🔍 (GET)  
+🔹 **Update Book Details** ✏️ (PUT)  
+🔹 **Delete a Book** ❌ (DELETE)  
+
+✔️ **Key Concepts Covered:**  
+✅ **Express.js Routing**  
+✅ **MongoDB CRUD Operations**  
+✅ **Middleware & Error Handling**  
+✅ **MVC Architecture Implementation**  
+
+🚀 **Hands-on Practice to Reinforce Learning!** 🎯  
