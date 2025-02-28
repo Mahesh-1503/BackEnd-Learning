@@ -11,10 +11,11 @@ connectToDB();
 
 //middleware -> express.json() -> parses incoming requests with JSON payloads and is based on body-parser.
 app.use(express.json());
-
+//initial route
+app.get('/', (req, res) => res.send('Hello World!'));
 //routes here
 app.use('/api/books', bookRoutes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-// 4:04
+// 4:20
